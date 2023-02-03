@@ -1,0 +1,29 @@
+body {
+    font-family: 'poppins';
+    font-size: 20px;
+    background-color: #2458
+    ;
+}
+
+h1 {
+    background-color: #f0d56b;
+    padding: 0px 20px;
+    margin: 20px;
+}
+
+.tamanho-capa {
+    margin: 20px;
+    width: 250px;
+
+}
+
+.filmesfonte {
+    background-color: #f0d56b;
+    margin: 20px;
+    padding: 15px;
+}
+
+.descricao {
+    margin: 0px 20px 50px 20px;
+
+}
