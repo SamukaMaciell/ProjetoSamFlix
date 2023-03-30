@@ -1,31 +1,113 @@
 body {
-    font-family: 'poppins';
+    background-color: #696969;
+    font-family: 'poppins'; 
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho{
+    background-color: #8b0000;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+.cabecalho .menu{
+    display: flex;
+    gap: 30px;
+    margin-right: 25px; 
+}
+
+ .menu li a {
+    color: #000000;
     font-size: 20px;
-    background-color: #2458;
-    box-sizing: border-box;
-}
+    border-radius: 50%;
+    padding: 2px;
+    font-weight: bold;
+ }
+.cabecalho .titulo{
+    margin-left: 30px;
+    font-size: 50px;
+ }
 
-h1 {
-    background-color: #00f555;
-    padding: 0px 20px;
-    margin: 20px;
-}
 
-.tamanho-capa {
-    margin: 0px 20px 0px 20px;
-    width: 250px;
-    
-
-}
-
-.filmesfonte {
-    margin: 20px 20px 0px 20px;
-    padding: 15px;
-    
-}
-
-.descricao {
-    margin: 0px 20px 50px 20px;
+ .title{
+    color: #ffffff;
+    width: 400px;
+    height: 150px;
+    font-size: 30px;
+    margin: 50px 0 0 50px;
     padding: 20px;
+    z-index: 2;
+ }
+ .descricao{
+    color: #ffffff;
+    width: 400px;
+    height: 120px;
+    font-size: 15px;
+    margin-left: 50px; 
+    padding: 15px;
+    z-index: 2;
+ }
+
+ .fundo {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+ }
+
+ .fundo img{
+    position: absolute;
+    z-index: 1;
+    width: 90vw;
+    height: 100vh;
+    display: flex;
+   
     
 }
+
+.fundo::after {
+    content: "";
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,1) 100%);
+}
+
+.logo{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.logo ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.logo .icone{
+    width: 30px;
+    filter: invert(1);
+    transition: 0.3s ease-in-out;
+}
+    
+ 
+
+
+
+
